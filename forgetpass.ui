@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>forgetpass</class>
+ <widget class="QWidget" name="forgetpass">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>631</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RESET KATA SANDI</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="assets.qrc">
+    <normaloff>:/images/kg-logo.png</normaloff>:/images/kg-logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#forgetpass{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1.606, fx:0.5, fy:0.5, stop:0 rgb(141, 255, 128), stop:1 rgba(255, 255, 255, 255));
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>451</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame{
+border-radius: 10px;
+border: 1px solid black;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="userid">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit#userid{
+padding: 1px 1px 1px 30px;
+border-radius: 5px;
+}</string>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="placeholderText">
+     <string>USER ID</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>110</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit#password{
+padding: 1px 1px 1px 30px;
+border-radius: 5px;
+}</string>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>KATA SANDI BARU</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="masterkey">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>210</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit#masterkey{
+padding: 1px 1px 1px 30px;
+border-radius: 5px;
+}</string>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>MASTER KEY</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="confirmpassword">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>160</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit#confirmpassword{
+padding: 1px 1px 1px 30px;
+border-radius: 5px;
+}</string>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>KONFIRMASI KATA SANDI BARU</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="header">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>451</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background-color: #000000;
+font: 75 24pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+color: #ffffff;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>RESET KATA SANDI</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reset">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>250</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#reset{
+border-radius: 5px;
+background-color: rgba(0, 0, 0,200);
+font: 16pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+color: #ffffff;
+}</string>
+    </property>
+    <property name="text">
+     <string>RESET</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="useridicon">
+    <property name="geometry">
+     <rect>
+      <x>94</x>
+      <y>65</y>
+      <width>19</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#useridicon{
+border-image: url(:/images/user-logo.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="passicon1">
+    <property name="geometry">
+     <rect>
+      <x>91</x>
+      <y>116</y>
+      <width>26</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#passicon1{
+border-image:url(:/images/lock-logo.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="passicon2">
+    <property name="geometry">
+     <rect>
+      <x>91</x>
+      <y>166</y>
+      <width>26</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#passicon2{
+border-image:url(:/images/lock-logo.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="passicon3">
+    <property name="geometry">
+     <rect>
+      <x>91</x>
+      <y>216</y>
+      <width>26</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#passicon3{
+border-image:url(:/images/lock-logo.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showpass">
+    <property name="geometry">
+     <rect>
+      <x>342</x>
+      <y>116</y>
+      <width>24</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#showpass{
+border-image:url(:/images/show-pass.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showconfpass">
+    <property name="geometry">
+     <rect>
+      <x>342</x>
+      <y>166</y>
+      <width>24</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#showconfpass{
+border-image:url(:/images/show-pass.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showmasterkey">
+    <property name="geometry">
+     <rect>
+      <x>342</x>
+      <y>216</y>
+      <width>24</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#showmasterkey{
+border-image:url(:/images/show-pass.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="warning">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>290</y>
+      <width>451</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLine#warning{
+font: 75 14pt &quot;Source Code Pro&quot;;
+color: #ff0000;
+font-weight: 500;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="information">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>290</y>
+      <width>451</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#information{
+font: 75 14pt &quot;Source Code Pro&quot;;
+color: #00ff00;
+font-weight: 500;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>userid</tabstop>
+  <tabstop>password</tabstop>
+  <tabstop>showpass</tabstop>
+  <tabstop>confirmpassword</tabstop>
+  <tabstop>showconfpass</tabstop>
+  <tabstop>masterkey</tabstop>
+  <tabstop>showmasterkey</tabstop>
+  <tabstop>reset</tabstop>
+ </tabstops>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login</class>
+ <widget class="QWidget" name="login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LOGIN</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="assets.qrc">
+    <normaloff>:/images/kg-logo.png</normaloff>:/images/kg-logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#login{
+border: 2px solid #000000;
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>651</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1.606, fx:0.5, fy:0.5, stop:0 rgb(141, 255, 128), stop:1 rgba(255, 255, 255, 255));
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="header">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>651</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#header{
+font: 75 24pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+color: #ffffff;
+}</string>
+    </property>
+    <property name="text">
+     <string>APLIKASI ARSIP SURAT</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="kglogo">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>181</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#kglogo{
+border-image: url(:/images/kg-logo.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="username">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>110</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit#username{
+border-radius: 10px;
+padding: 2px 2px 2px 42px;
+font: 75 18pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="placeholderText">
+     <string>USER ID</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginbutton">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>240</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#loginbutton{
+background-color: #ffffff;
+border-radius: 10px;
+font: 75 18pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>LOGIN</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>180</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit#password{
+border-radius: 10px;
+padding: 2px 2px 2px 42px;
+font: 75 18pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>KATA SANDI</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="warning">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>571</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#warning{
+font: 75 15pt &quot;Source Code Pro&quot;;
+color: #ff0000;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="keylogo">
+    <property name="geometry">
+     <rect>
+      <x>219</x>
+      <y>188</y>
+      <width>41</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#keylogo{
+border-image: url(:/images/lock-logo.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userlogo">
+    <property name="geometry">
+     <rect>
+      <x>227</x>
+      <y>118</y>
+      <width>27</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#userlogo{
+border-image: url(:/images/user-logo.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showhide">
+    <property name="geometry">
+     <rect>
+      <x>561</x>
+      <y>191</y>
+      <width>31</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#showhide{
+border-image: url(:/images/show-pass.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="lupasandi">
+    <property name="geometry">
+     <rect>
+      <x>214</x>
+      <y>230</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#lupasandi{
+font: 10pt &quot;Source Code Pro&quot;;
+font-weight: 500;
+border: 0;
+}</string>
+    </property>
+    <property name="text">
+     <string>LUPA SANDI</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tambahuser">
+    <property name="geometry">
+     <rect>
+      <x>309</x>
+      <y>230</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#tambahuser{
+font: 10pt &quot;Source Code Pro&quot;;
+font-weight: 500;
+border: 0;
+}</string>
+    </property>
+    <property name="text">
+     <string>TAMBAH USER</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="separator">
+    <property name="geometry">
+     <rect>
+      <x>297</x>
+      <y>206</y>
+      <width>16</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#separator{
+font: 20pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>|</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="separator_2">
+    <property name="geometry">
+     <rect>
+      <x>396</x>
+      <y>206</y>
+      <width>16</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#separator_2{
+font: 20pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+}</string>
+    </property>
+    <property name="text">
+     <string>|</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hapususer">
+    <property name="geometry">
+     <rect>
+      <x>404</x>
+      <y>230</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#hapususer{
+font: 10pt &quot;Source Code Pro&quot;;
+font-weight: 500;
+border: 0;
+}</string>
+    </property>
+    <property name="text">
+     <string>HAPUS USER</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>username</tabstop>
+  <tabstop>password</tabstop>
+  <tabstop>showhide</tabstop>
+  <tabstop>lupasandi</tabstop>
+  <tabstop>tambahuser</tabstop>
+  <tabstop>hapususer</tabstop>
+  <tabstop>loginbutton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

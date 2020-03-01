@@ -1,0 +1,2083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>suratmasuk</class>
+ <widget class="QMainWindow" name="suratmasuk">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ARSIP SURAT MASUK</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="assets.qrc">
+    <normaloff>:/images/kg-logo.png</normaloff>:/images/kg-logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow#suratmasuk{
+background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="nav">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>311</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame#nav{
+background-color: rgb(58, 58, 58);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="headerbg">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>311</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#headerbg{
+background-color: rgba(141, 255, 128,220);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="header">
+     <property name="geometry">
+      <rect>
+       <x>47</x>
+       <y>13</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#header{
+font: 12pt &quot;Comic Sans MS&quot;;
+color: #ffffff;
+font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>ARSIP SURAT MASUK 
+KG UNSOED</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btndashboard">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>180</y>
+       <width>241</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#btndashboard{
+border: 1px solid #9f9f9f;
+padding-left: 20px;
+font: 18pt &quot;Comic Sans MS&quot;;
+font-weight: bold;
+color: #9f9f9f;
+text-align: left;
+}</string>
+     </property>
+     <property name="text">
+      <string>DASHBOARD</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btntambah">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>250</y>
+       <width>241</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#btntambah{
+border: 1px solid #9f9f9f;
+padding-left: 20px;
+font: 18pt &quot;Comic Sans MS&quot;;
+font-weight: bold;
+color: #9f9f9f;
+text-align: left;
+}</string>
+     </property>
+     <property name="text">
+      <string>TAMBAH DATA</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnsetting">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>320</y>
+       <width>241</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#btnsetting{
+border: 1px solid #9f9f9f;
+padding-left: 20px;
+font: 18pt &quot;Comic Sans MS&quot;;
+font-weight: bold;
+color: #9f9f9f;
+text-align: left;
+}</string>
+     </property>
+     <property name="text">
+      <string>PENGATURAN</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bgdashboard">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>180</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#bgdashboard{
+border: 1px solid #9f9f9f;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bgtambah">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>250</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#bgtambah{
+border: 1px solid #9f9f9f;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="bgsetting">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>320</y>
+       <width>71</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#bgsetting{
+border: 1px solid #9f9f9f;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="icondashboard">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#icondashboard{
+border-image: url(:/images/home.png) 0 0 0 0 stretch stretch;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="icontambah">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>261</y>
+       <width>39</width>
+       <height>39</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#icontambah{
+border-image: url(:/images/add.png) 0 0 0 0 stretch stretch;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="iconsetting">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>331</y>
+       <width>40</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#iconsetting{
+border-image: url(:/images/setting.png) 0 0 0 0 stretch stretch;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="kglogo">
+     <property name="geometry">
+      <rect>
+       <x>13</x>
+       <y>15</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#kglogo{
+border-image: url(:/images/kg-logo.png) 0 0 0 0 stretch stretch;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <zorder>bgsetting</zorder>
+    <zorder>bgtambah</zorder>
+    <zorder>bgdashboard</zorder>
+    <zorder>headerbg</zorder>
+    <zorder>header</zorder>
+    <zorder>btndashboard</zorder>
+    <zorder>btntambah</zorder>
+    <zorder>btnsetting</zorder>
+    <zorder>icondashboard</zorder>
+    <zorder>icontambah</zorder>
+    <zorder>iconsetting</zorder>
+    <zorder>kglogo</zorder>
+   </widget>
+   <widget class="QWidget" name="dashboard" native="true">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>1041</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#dashboard{
+	background-color: #ffffff;
+}</string>
+    </property>
+    <widget class="QLabel" name="h1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1041</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#h1{
+	background-color: rgb(58,58,58);
+	color: #ffffff;
+	font: 30pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>DAFTAR SURAT MASUK</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tabelsmasuk">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>290</y>
+       <width>1031</width>
+       <height>391</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableView#tabelsmasuk{
+background-color: rgba(58,58,58,60);
+	font: 8pt &quot;Comic Sans MS&quot;;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustIgnored</enum>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::SelectedClicked</set>
+     </property>
+     <property name="tabKeyNavigation">
+      <bool>false</bool>
+     </property>
+     <property name="showDropIndicator" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="dragDropOverwriteMode">
+      <bool>false</bool>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::MultiSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <property name="textElideMode">
+      <enum>Qt::ElideNone</enum>
+     </property>
+     <property name="showGrid">
+      <bool>true</bool>
+     </property>
+     <property name="gridStyle">
+      <enum>Qt::SolidLine</enum>
+     </property>
+     <property name="sortingEnabled">
+      <bool>false</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>90</y>
+       <width>501</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox#groupBox{
+	font: 14pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="title">
+      <string>CARI SURAT</string>
+     </property>
+     <widget class="QComboBox" name="kategori">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>60</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox#kategori{
+	background-color: rgba(58,58,58,60);
+	border-radius: 10px;
+	color: #ffffff;
+	font: 12pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="currentText">
+       <string>NO</string>
+      </property>
+      <property name="maxCount">
+       <number>10</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>NO</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ALAMAT PENGIRIM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TANGGAL TERIMA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TANGGAL SURAT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>NOMOR SURAT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PERIHAL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ACC KEPADA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TANGGAL ACC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>KETERANGAN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>KLASIFIKASI SURAT</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="kategorilabel">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>30</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#kategorilabel{
+	font: 12pt &quot;Comic Sans MS&quot;;
+font-weight: 700;
+}</string>
+      </property>
+      <property name="text">
+       <string>BERDASARKAN</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="katakuncilabel">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#katakuncilabel{
+	font: 12pt &quot;Comic Sans MS&quot;;
+font-weight: 700;
+}</string>
+      </property>
+      <property name="text">
+       <string>KATA KUNCI</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cari">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>110</y>
+        <width>451</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#cari{
+	background-color: rgba(58,58,58,60);
+	color: #ffffff;
+	border-radius: 10px;
+color: #ffffff;
+	font: 14pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>CARI</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="kwtextedit">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>291</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTextEdit#kwtextedit{
+	border-radius: 5px;
+	border: 1px solid #9f9f9f;
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>MASUKKAN KATA KUNCI</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="searchresult">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>140</y>
+        <width>451</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#searchresult{
+	color: #ff0000;
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>93</y>
+       <width>281</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox#groupBox_2{
+	font: 12pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="title">
+      <string>URUT BERDASARKAN</string>
+     </property>
+     <widget class="QComboBox" name="urutkan">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox#urutkan{
+	background-color: rgba(58,58,58,60);
+	border-radius: 10px;
+	color: #ffffff;
+	font: 12pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>NO</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ALAMAT PENGIRIM</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TANGGAL TERIMA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TANGGAL SURAT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>NO SURAT</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>PERIHAL</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>ACC KEPADA</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>TANGGAL ACC</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>KETERANGAN</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>KLASIFIKASI SURAT</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QRadioButton" name="az">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>30</y>
+        <width>61</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton#az{
+font: 8pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>A-Z</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="za">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>50</y>
+        <width>82</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QRadioButton#za{
+font: 8pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Z-A</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>93</y>
+       <width>231</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox#groupBox_3{
+	font: 12pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="title">
+      <string>AKSI</string>
+     </property>
+     <widget class="QPushButton" name="edit">
+      <property name="geometry">
+       <rect>
+        <x>15</x>
+        <y>30</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#edit{
+	border-radius: 10px;
+	background-color: rgba(0,255,0, 150);	
+	font: 13pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>EDIT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="hapus">
+      <property name="geometry">
+       <rect>
+        <x>118</x>
+        <y>30</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#hapus{
+	border-radius: 10px;
+	background-color: rgba(255,0,0, 150);	
+	font: 13pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>HAPUS</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="refresh">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>200</y>
+       <width>521</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton#refresh{
+	border-radius: 10px;
+	background-color: rgba(58,58,58,60);
+	color: #ffffff;
+	font: 20pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>REFRESH</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="information_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>680</y>
+       <width>1041</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#information_2{
+font: 16pt &quot;Comic Sans MS&quot;;
+color: #00ff00;
+font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QWidget" name="editwidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>100</y>
+       <width>931</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#editwidget{
+	background-color: #ffffff;
+	border-radius: 10px;
+}</string>
+     </property>
+     <widget class="QLabel" name="h1_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>931</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#h1_2{
+	background-color: rgb(58,58,58);
+	color: #ffffff;
+	font: 30pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}</string>
+      </property>
+      <property name="text">
+       <string>EDIT SURAT MASUK</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>410</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_10{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Klasifikasi Surat</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="edittglterima">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>270</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateEdit#edittglterima{
+	font: 10pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>No.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>250</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_7{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Tanggal Terima</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editnosurat">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>430</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#editnosurat{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#editnosurat:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>nomer surat</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editklasifikasi">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>430</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#editklasifikasi{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#editklasifikasi:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>klasifikasi surat</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editperihal">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>110</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#editperihal{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#editperihal:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>perihal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>170</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_2{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Alamat Pengirim</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="editbtnubah">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>500</y>
+        <width>371</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#editbtnubah{
+	border-radius: 10px;
+	background-color: rgb(130, 228, 118);
+	font: 20pt &quot;Comic Sans MS&quot;;
+}
+QPushButton#editbtnubah:hover{
+	background-color: rgb(122, 213, 110);
+}</string>
+      </property>
+      <property name="text">
+       <string>UBAH</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>90</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_5{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Perihal</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="edittglsurat">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>350</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateEdit#edittglsurat{
+	font: 10pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>170</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_6{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>ACC Kepada</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="edittglacc">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>270</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateEdit#edittglacc{
+	font: 10pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}</string>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>410</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_4{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Nomer Surat</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>330</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_9{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Keterangan</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>330</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_3{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Tanggal Surat</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>250</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_8{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Tanggal ACC</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editno">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>110</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#editno{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#editno:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>nomer</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editacckepada">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>190</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#editacckepada{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#editacckepada:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>acc kepada</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editalamatpengirim">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>190</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#editalamatpengirim{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#editalamatpengirim:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>alamat pengirim</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="editketerangan">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>350</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#editketerangan{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#editketerangan:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>keterangan</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="editkembali">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>500</y>
+        <width>371</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#editkembali{
+	border-radius: 10px;
+	background-color:rgb(240, 240, 240);
+	font: 20pt &quot;Comic Sans MS&quot;;
+}
+QPushButton#editkembali:hover{
+	background-color: rgb(223, 223, 223);
+}</string>
+      </property>
+      <property name="text">
+       <string>KEMBALI</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="editwarning">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>570</y>
+        <width>801</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#editwarning{
+font: 16pt &quot;Comic Sans MS&quot;;
+color: #ff0000;
+font-weight: bold;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tambah" native="true">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>1041</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#tambah{
+	background-color: #ffffff;
+}</string>
+    </property>
+    <widget class="QLabel" name="h1tambah">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1041</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#h1tambah{
+	background-color: rgb(58,58,58);
+	color: #ffffff;
+	font: 30pt &quot;Comic Sans MS&quot;;
+	font-weight: bold;
+}</string>
+     </property>
+     <property name="text">
+      <string>TAMBAH SURAT</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="tambahgroup">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>1021</width>
+       <height>641</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox#tambahgroup{
+	font: 12pt &quot;Comic Sans MS&quot;;
+}</string>
+     </property>
+     <property name="title">
+      <string>TAMBAH SURAT</string>
+     </property>
+     <widget class="QLineEdit" name="no">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>60</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#no{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#no:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>nomer</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="alamatpengirim">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>140</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#alamatpengirim{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#alamatpengirim:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>alamat pengirim</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="nosurat">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>380</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#nosurat{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#nosurat:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>nomer surat</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="perihal">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>60</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#perihal{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#perihal:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>perihal</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="acckepada">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>140</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#acckepada{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#acckepada:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>acc kepada</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="keterangan">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>300</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#keterangan{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#keterangan:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>keterangan</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="klasifikasi">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>380</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit#klasifikasi{
+	border-radius: 10px;
+	border: 1px solid #9f9f9f;
+	font: 12pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}
+QLineEdit#klasifikasi:hover{
+	border: 1px solid #000000;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>klasifikasi surat</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>40</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>No.</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>120</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_2{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Alamat Pengirim</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>280</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_3{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Tanggal Surat</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="tglsurat">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>300</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateEdit#tglsurat{
+	font: 10pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>360</y>
+        <width>121</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_4{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Nomer Surat</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>40</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_5{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Perihal</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>120</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_6{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>ACC Kepada</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>200</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_7{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Tanggal Terima</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="tglterima">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>220</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateEdit#tglterima{
+	font: 10pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}</string>
+      </property>
+      <property name="buttonSymbols">
+       <enum>QAbstractSpinBox::NoButtons</enum>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="tglacc">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>220</y>
+        <width>371</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QDateEdit#tglacc{
+	font: 10pt &quot;Comic Sans MS&quot;;
+	padding-left: 10px;
+}</string>
+      </property>
+      <property name="displayFormat">
+       <string>yyyy-MM-dd</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>200</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_8{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Tanggal ACC</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>280</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_9{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Keterangan</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>360</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#label_10{
+	font: 10pt &quot;Comic Sans MS&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>Klasifikasi Surat</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnreset">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>470</y>
+        <width>371</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnreset{
+	border-radius: 10px;
+	background-color: rgb(9, 145, 236);
+	font: 20pt &quot;Comic Sans MS&quot;;
+}
+QPushButton#btnreset:hover{
+	background-color: rgb(7, 127, 218);
+}</string>
+      </property>
+      <property name="text">
+       <string>RESET</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btntambah_2">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>470</y>
+        <width>371</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btntambah_2{
+	border-radius: 10px;
+	background-color: rgb(130, 228, 118);
+	font: 20pt &quot;Comic Sans MS&quot;;
+}
+QPushButton#btntambah_2:hover{
+	background-color: rgb(122, 213, 110);
+}</string>
+      </property>
+      <property name="text">
+       <string>TAMBAH</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="warning">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>560</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#warning{
+font: 16pt &quot;Comic Sans MS&quot;;
+color: #ff0000;
+font-weight: bold;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="information">
+      <property name="geometry">
+       <rect>
+        <x>280</x>
+        <y>560</y>
+        <width>451</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel#information{
+font: 16pt &quot;Comic Sans MS&quot;;
+color: #00ff00;
+font-weight: bold;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="setting" native="true">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>1041</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#setting{
+	background-color: #ffffff;
+}</string>
+    </property>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>20</y>
+       <width>551</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel#label_11{
+	
+	border-image: url(:/images/under-maintenance.png) 0 0 0 0 stretch stretch;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <zorder>nav</zorder>
+   <zorder>setting</zorder>
+   <zorder>dashboard</zorder>
+   <zorder>tambah</zorder>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>editno</tabstop>
+  <tabstop>editalamatpengirim</tabstop>
+  <tabstop>edittglterima</tabstop>
+  <tabstop>edittglsurat</tabstop>
+  <tabstop>editnosurat</tabstop>
+  <tabstop>editperihal</tabstop>
+  <tabstop>editacckepada</tabstop>
+  <tabstop>edittglacc</tabstop>
+  <tabstop>editketerangan</tabstop>
+  <tabstop>editklasifikasi</tabstop>
+  <tabstop>editbtnubah</tabstop>
+  <tabstop>no</tabstop>
+  <tabstop>alamatpengirim</tabstop>
+  <tabstop>tglterima</tabstop>
+  <tabstop>tglsurat</tabstop>
+  <tabstop>nosurat</tabstop>
+  <tabstop>perihal</tabstop>
+  <tabstop>acckepada</tabstop>
+  <tabstop>tglacc</tabstop>
+  <tabstop>keterangan</tabstop>
+  <tabstop>klasifikasi</tabstop>
+  <tabstop>btntambah_2</tabstop>
+  <tabstop>bgtambah</tabstop>
+  <tabstop>bgsetting</tabstop>
+  <tabstop>icondashboard</tabstop>
+  <tabstop>iconsetting</tabstop>
+  <tabstop>kategori</tabstop>
+  <tabstop>bgdashboard</tabstop>
+  <tabstop>btnsetting</tabstop>
+  <tabstop>icontambah</tabstop>
+  <tabstop>cari</tabstop>
+  <tabstop>kglogo</tabstop>
+  <tabstop>az</tabstop>
+  <tabstop>refresh</tabstop>
+  <tabstop>btndashboard</tabstop>
+  <tabstop>kwtextedit</tabstop>
+  <tabstop>btnreset</tabstop>
+  <tabstop>za</tabstop>
+  <tabstop>edit</tabstop>
+  <tabstop>btntambah</tabstop>
+  <tabstop>hapus</tabstop>
+  <tabstop>urutkan</tabstop>
+  <tabstop>tabelsmasuk</tabstop>
+  <tabstop>editkembali</tabstop>
+ </tabstops>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

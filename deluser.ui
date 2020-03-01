@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>deluser</class>
+ <widget class="QWidget" name="deluser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>631</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HAPUS USER</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="assets.qrc">
+    <normaloff>:/images/kg-logo.png</normaloff>:/images/kg-logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#deluser{
+background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:1.606, fx:0.5, fy:0.5, stop:0 rgb(141, 255, 128), stop:1 rgba(255, 255, 255, 255));
+}</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>10</y>
+     <width>451</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame#frame{
+border-radius:10px;
+border: 1px solid black;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="header">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>451</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#header{
+border: 0;
+background-color: #000000;
+font: 75 24pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+color: #ffffff;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>HAPUS USER</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="usertabel">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>150</y>
+      <width>221</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="refresh">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>391</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#refresh{
+border-radius: 5px;
+background-color: #000000;
+font: 16pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+color: #ffffff;
+}</string>
+    </property>
+    <property name="text">
+     <string>TAMPILKAN USER</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="warning">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#warning{
+font: 75 14pt &quot;Source Code Pro&quot;;
+color: #ff0000;
+font-weight: 500;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="information">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>300</y>
+      <width>391</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#information{
+font: 75 14pt &quot;Source Code Pro&quot;;
+color: #00ff00;
+font-weight: 500;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="masterkey">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>391</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit#masterkey{
+padding: 1px 1px 1px 40px;
+border-radius: 5px;
+font-size: 18px;
+}</string>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>MASTER KEY</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="showpass">
+    <property name="geometry">
+     <rect>
+      <x>379</x>
+      <y>59</y>
+      <width>35</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#showpass{
+border-image:url(:/images/show-pass.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="masterkeyicon">
+    <property name="geometry">
+     <rect>
+      <x>29</x>
+      <y>55</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#masterkeyicon{
+border-image:url(:/images/lock-logo.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="userid">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>150</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit#userid{
+padding: 1px 1px 1px 35px;
+border-radius: 5px;
+font-size: 18px;
+}</string>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+    <property name="placeholderText">
+     <string>USER ID</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="useridicon">
+    <property name="geometry">
+     <rect>
+      <x>262</x>
+      <y>156</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#useridicon{
+border-image: url(:/images/user-logo.png) 0 0 0 0 stretch stretch;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="hapus">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>200</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#hapus{
+border-radius: 5px;
+background-color: #000000;
+font: 16pt &quot;Source Code Pro&quot;;
+font-weight: bold;
+color: #ffffff;
+}</string>
+    </property>
+    <property name="text">
+     <string>HAPUS</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>masterkey</tabstop>
+  <tabstop>showpass</tabstop>
+  <tabstop>refresh</tabstop>
+  <tabstop>userid</tabstop>
+  <tabstop>hapus</tabstop>
+  <tabstop>usertabel</tabstop>
+ </tabstops>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

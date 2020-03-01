@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>kg-logo.png</file>
+        <file>lock-logo.png</file>
+        <file>show-pass.png</file>
+        <file>user-logo.png</file>
+        <file>bg.png</file>
+        <file>home.png</file>
+        <file>add.png</file>
+        <file>setting.png</file>
+        <file>under-maintenance.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>menu</class>
+ <widget class="QMainWindow" name="menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1366</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MENU</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="assets.qrc">
+    <normaloff>:/images/kg-logo.png</normaloff>:/images/kg-logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralwidget{
+border-image: url(:/images/bg.png) 0 0 0 0 stretch stretch;
+}</string>
+   </property>
+   <widget class="QPushButton" name="smasuk">
+    <property name="geometry">
+     <rect>
+      <x>528</x>
+      <y>274</y>
+      <width>301</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 22pt &quot;Comic Sans MS&quot;;
+border-radius: 20px;
+background-color: rgb(122, 255, 112);
+border: 2px solid black;
+}</string>
+    </property>
+    <property name="text">
+     <string>SURAT MASUK</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="skeluar">
+    <property name="geometry">
+     <rect>
+      <x>528</x>
+      <y>402</y>
+      <width>301</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 22pt &quot;Comic Sans MS&quot;;
+border-radius: 20px;
+background-color: rgb(122, 255, 112);
+border: 2px solid black;
+}</string>
+    </property>
+    <property name="text">
+     <string>SURAT KELUAR</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="assets.qrc"/>
+ </resources>
+ <connections/>
+</ui>

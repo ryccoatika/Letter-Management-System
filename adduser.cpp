@@ -62,19 +62,19 @@ void adduser::on_confirmpass_textChanged(const QString &arg1)
 void adduser::on_tambah_clicked()
 {
     ui->information->setText("");
-    if(ui->userid->text().isNull()){
+    if(ui->userid->text().isEmpty()){
         ui->userid->setFocus();
         ui->warning->setText("USER ID HARUS DIISI !");
-    }else if(ui->pass->text().isNull()){
+    }else if(ui->pass->text().isEmpty()){
         ui->pass->setFocus();
         ui->warning->setText("PASSWORD HARUS DIISI !");
-    }else if(ui->confirmpass->text().isNull()){
+    }else if(ui->confirmpass->text().isEmpty()){
         ui->confirmpass->setFocus();
         ui->warning->setText("KONFIRMASI HARUS DIISI !");
     }else if(ui->confirmpass->text() != ui->pass->text()){
         ui->confirmpass->setFocus();
         ui->warning->setText("KONFIRMASI HARUS SAMA DENGAN PASSWORD !");
-    }else if(ui->masterkey->text().isNull()){
+    }else if(ui->masterkey->text().isEmpty()){
         ui->masterkey->setFocus();
         ui->warning->setText("MASTER KEY HARUS DIISI !");
     }else{

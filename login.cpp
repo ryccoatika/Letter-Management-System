@@ -25,10 +25,10 @@ void login::on_showhide_released()
 
 void login::on_loginbutton_clicked()
 {
-    if(ui->username->text().isNull()){
+    if(ui->username->text().isEmpty()){
         ui->warning->setText("Username harus diisi !!");
         ui->username->setFocus();
-    }else if(ui->password->text().isNull()){
+    }else if(ui->password->text().isEmpty()){
         ui->warning->setText("Password harus diisi !!");
         ui->password->setFocus();
     }else{

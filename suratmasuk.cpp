@@ -348,34 +348,34 @@ void suratmasuk::on_btntambah_2_clicked()
 {
     ui->warning->clear();
     ui->information->clear();
-    if(ui->no->text().isNull()){
+    if(ui->no->text().isEmpty()){
         ui->warning->setText("NO HARUS DIISI !");
         ui->no->setFocus();
-    }else if(ui->alamatpengirim->text().isNull()){
+    }else if(ui->alamatpengirim->text().isEmpty()){
         ui->warning->setText("ALAMAT PENGIRIM HARUS DIISI !");
         ui->alamatpengirim->setFocus();
-    }else if(ui->tglterima->text().isNull()){
+    }else if(ui->tglterima->text().isEmpty()){
         ui->warning->setText("TANGGAL TERIMA HARUS DIISI !");
         ui->tglterima->setFocus();
-    }else if(ui->tglsurat->text().isNull()){
+    }else if(ui->tglsurat->text().isEmpty()){
         ui->warning->setText("TANGGAL SURAT HARUS DIISI !");
         ui->tglsurat->setFocus();
-    }else if(ui->nosurat->text().isNull()){
+    }else if(ui->nosurat->text().isEmpty()){
         ui->warning->setText("NO SURAT HARUS DIISI !");
         ui->nosurat->setFocus();
-    }else if(ui->perihal->text().isNull()){
+    }else if(ui->perihal->text().isEmpty()){
         ui->warning->setText("PERIHAL HARUS DIISI !");
         ui->perihal->setFocus();
-    }else if(ui->acckepada->text().isNull()){
+    }else if(ui->acckepada->text().isEmpty()){
         ui->warning->setText("ACC KEPADA HARUS DIISI !");
         ui->acckepada->setFocus();
-    }else if(ui->tglacc->text().isNull()){
+    }else if(ui->tglacc->text().isEmpty()){
         ui->warning->setText("TANGGAL ACC HARUS DIISI !");
         ui->tglacc->setFocus();
-    }else if(ui->keterangan->text().isNull()){
+    }else if(ui->keterangan->text().isEmpty()){
         ui->warning->setText("KETERANGAN HARUS DIISI !");
         ui->keterangan->setFocus();
-    }else if(ui->klasifikasi->text().isNull()){
+    }else if(ui->klasifikasi->text().isEmpty()){
         ui->warning->setText("KLASIFIKASI HARUS DIISI !");
         ui->klasifikasi->setFocus();
     }else{
@@ -590,34 +590,34 @@ void suratmasuk::on_editkembali_clicked()
 void suratmasuk::on_editbtnubah_clicked()
 {
 
-    if(ui->editno->text().isNull()){
+    if(ui->editno->text().isEmpty()){
         ui->editwarning->setText("NO HARUS DIISI !");
         ui->editno->setFocus();
-    }else if(ui->editalamatpengirim->text().isNull()){
+    }else if(ui->editalamatpengirim->text().isEmpty()){
         ui->editwarning->setText("ALAMAT PENGIRIM HARUS DIISI !");
         ui->editalamatpengirim->setFocus();
-    }else if(ui->edittglterima->text().isNull()){
+    }else if(ui->edittglterima->text().isEmpty()){
         ui->editwarning->setText("TANGGAL TERIMA HARUS DIISI !");
         ui->edittglterima->setFocus();
-    }else if(ui->edittglsurat->text().isNull()){
+    }else if(ui->edittglsurat->text().isEmpty()){
         ui->editwarning->setText("TANGGAL SURAT HARUS DIISI !");
         ui->edittglsurat->setFocus();
-    }else if(ui->editnosurat->text().isNull()){
+    }else if(ui->editnosurat->text().isEmpty()){
         ui->editwarning->setText("NO SURAT HARUS DIISI !");
         ui->editnosurat->setFocus();
-    }else if(ui->editperihal->text().isNull()){
+    }else if(ui->editperihal->text().isEmpty()){
         ui->editwarning->setText("PERIHAL HARUS DIISI !");
         ui->editperihal->setFocus();
-    }else if(ui->editacckepada->text().isNull()){
+    }else if(ui->editacckepada->text().isEmpty()){
         ui->editwarning->setText("ACC KEPADA HARUS DIISI !");
         ui->editacckepada->setFocus();
-    }else if(ui->edittglacc->text().isNull()){
+    }else if(ui->edittglacc->text().isEmpty()){
         ui->editwarning->setText("TANGGAL ACC HARUS DIISI !");
         ui->edittglacc->setFocus();
-    }else if(ui->editketerangan->text().isNull()){
+    }else if(ui->editketerangan->text().isEmpty()){
         ui->editwarning->setText("KETERANGAN HARUS DIISI !");
         ui->editketerangan->setFocus();
-    }else if(ui->editklasifikasi->text().isNull()){
+    }else if(ui->editklasifikasi->text().isEmpty()){
         ui->editwarning->setText("KLASIFIKASI HARUS DIISI !");
         ui->editklasifikasi->setFocus();
     }else{

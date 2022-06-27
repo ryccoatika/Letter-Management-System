@@ -54,19 +54,19 @@ void forgetpass::on_showmasterkey_released()
 void forgetpass::on_reset_clicked()
 {
     ui->information->setText("");
-    if(ui->userid->text().isNull()){
+    if(ui->userid->text().isEmpty()){
         ui->userid->setFocus();
         ui->warning->setText("USER ID HARUS DIISI !");
-    }else if(ui->password->text().isNull()){
+    }else if(ui->password->text().isEmpty()){
         ui->password->setFocus();
         ui->warning->setText("PASSWORD HARUS DIISI !");
-    }else if(ui->confirmpassword->text().isNull()){
+    }else if(ui->confirmpassword->text().isEmpty()){
         ui->confirmpassword->setFocus();
         ui->warning->setText("KONFIRMASI HARUS DIISI !");
     }else if(ui->confirmpassword->text() != ui->password->text()){
         ui->confirmpassword->setFocus();
         ui->warning->setText("KONFIRMASI HARUS SAMA DENGAN PASSWORD !");
-    }else if(ui->masterkey->text().isNull()){
+    }else if(ui->masterkey->text().isEmpty()){
         ui->masterkey->setFocus();
         ui->warning->setText("MASTER KEY HARUS DIISI !");
     }else{

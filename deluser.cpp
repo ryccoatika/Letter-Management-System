@@ -21,7 +21,7 @@ void deluser::closeEvent(QCloseEvent *event) {
 
 void deluser::on_refresh_clicked()
 {
-    if(ui->masterkey->text().isNull()){
+    if(ui->masterkey->text().isEmpty()){
         ui->warning->setText("MASTER KEY HARUS DIISI !");
         ui->masterkey->setFocus();
     }else {
@@ -89,10 +89,10 @@ void deluser::on_masterkey_returnPressed()
 
 void deluser::on_hapus_clicked()
 {
-    if(ui->masterkey->text().isNull()){
+    if(ui->masterkey->text().isEmpty()){
         ui->warning->setText("MASTER KEY HARUS DIISI !");
         ui->masterkey->setFocus();
-    }else if(ui->userid->text().isNull()){
+    }else if(ui->userid->text().isEmpty()){
         ui->warning->setText("USER ID HARUS DIISI !");
         ui->userid->setFocus();
     }else {

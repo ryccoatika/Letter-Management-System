@@ -2,7 +2,7 @@
 #define MENU_H
 
 #include <QMainWindow>
-#include <QDesktopWidget>
+#include <qscreen.h>
 #include "suratmasuk.h"
 #include "suratkeluar.h"
 

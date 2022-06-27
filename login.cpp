@@ -25,10 +25,10 @@ void login::on_showhide_released()
 
 void login::on_loginbutton_clicked()
 {
-    if(ui->username->text() == NULL){
+    if(ui->username->text().isNull()){
         ui->warning->setText("Username harus diisi !!");
         ui->username->setFocus();
-    }else if(ui->password->text() == NULL){
+    }else if(ui->password->text().isNull()){
         ui->warning->setText("Password harus diisi !!");
         ui->password->setFocus();
     }else{
@@ -50,7 +50,7 @@ void login::on_loginbutton_clicked()
                     ui->warning->setText("Login Success");
                     m.resize(1366,768);
                     this->close();
-                    if(QApplication::desktop()->height() > 768 || QApplication::desktop()->width() > 1366)
+                    if(QGuiApplication::primaryScreen()->geometry().height() > 768 || QGuiApplication::primaryScreen()->geometry().width() > 1366)
                         m.show();
                     else
                         m.showMaximized();

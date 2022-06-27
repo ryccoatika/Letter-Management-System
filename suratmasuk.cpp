@@ -348,34 +348,34 @@ void suratmasuk::on_btntambah_2_clicked()
 {
     ui->warning->clear();
     ui->information->clear();
-    if(ui->no->text() == NULL){
+    if(ui->no->text().isNull()){
         ui->warning->setText("NO HARUS DIISI !");
         ui->no->setFocus();
-    }else if(ui->alamatpengirim->text() == NULL){
+    }else if(ui->alamatpengirim->text().isNull()){
         ui->warning->setText("ALAMAT PENGIRIM HARUS DIISI !");
         ui->alamatpengirim->setFocus();
-    }else if(ui->tglterima->text() == NULL){
+    }else if(ui->tglterima->text().isNull()){
         ui->warning->setText("TANGGAL TERIMA HARUS DIISI !");
         ui->tglterima->setFocus();
-    }else if(ui->tglsurat->text() == NULL){
+    }else if(ui->tglsurat->text().isNull()){
         ui->warning->setText("TANGGAL SURAT HARUS DIISI !");
         ui->tglsurat->setFocus();
-    }else if(ui->nosurat->text() == NULL){
+    }else if(ui->nosurat->text().isNull()){
         ui->warning->setText("NO SURAT HARUS DIISI !");
         ui->nosurat->setFocus();
-    }else if(ui->perihal->text() == NULL){
+    }else if(ui->perihal->text().isNull()){
         ui->warning->setText("PERIHAL HARUS DIISI !");
         ui->perihal->setFocus();
-    }else if(ui->acckepada->text() == NULL){
+    }else if(ui->acckepada->text().isNull()){
         ui->warning->setText("ACC KEPADA HARUS DIISI !");
         ui->acckepada->setFocus();
-    }else if(ui->tglacc->text() == NULL){
+    }else if(ui->tglacc->text().isNull()){
         ui->warning->setText("TANGGAL ACC HARUS DIISI !");
         ui->tglacc->setFocus();
-    }else if(ui->keterangan->text() == NULL){
+    }else if(ui->keterangan->text().isNull()){
         ui->warning->setText("KETERANGAN HARUS DIISI !");
         ui->keterangan->setFocus();
-    }else if(ui->klasifikasi->text() == NULL){
+    }else if(ui->klasifikasi->text().isNull()){
         ui->warning->setText("KLASIFIKASI HARUS DIISI !");
         ui->klasifikasi->setFocus();
     }else{
@@ -525,9 +525,10 @@ void suratmasuk::on_cari_clicked()
         if(findlist.count() == 0){
             ui->information_2->setText("pencarian tidak ditemukan");
             ui->information_2->setStyleSheet("QLabel#information_2{font: 16pt 'Comic Sans MS';color: #ff0000;font-weight: bold;}");
-        }else
+        }else {
             ui->information_2->clear();
             ui->information_2->setStyleSheet("QLabel#information_2{font: 16pt 'Comic Sans MS';color: #00ff00;font-weight: bold;}");
+        }
 
         ui->tabelsmasuk->setModel(model);
 
@@ -589,34 +590,34 @@ void suratmasuk::on_editkembali_clicked()
 void suratmasuk::on_editbtnubah_clicked()
 {
 
-    if(ui->editno->text() == NULL){
+    if(ui->editno->text().isNull()){
         ui->editwarning->setText("NO HARUS DIISI !");
         ui->editno->setFocus();
-    }else if(ui->editalamatpengirim->text() == NULL){
+    }else if(ui->editalamatpengirim->text().isNull()){
         ui->editwarning->setText("ALAMAT PENGIRIM HARUS DIISI !");
         ui->editalamatpengirim->setFocus();
-    }else if(ui->edittglterima->text() == NULL){
+    }else if(ui->edittglterima->text().isNull()){
         ui->editwarning->setText("TANGGAL TERIMA HARUS DIISI !");
         ui->edittglterima->setFocus();
-    }else if(ui->edittglsurat->text() == NULL){
+    }else if(ui->edittglsurat->text().isNull()){
         ui->editwarning->setText("TANGGAL SURAT HARUS DIISI !");
         ui->edittglsurat->setFocus();
-    }else if(ui->editnosurat->text() == NULL){
+    }else if(ui->editnosurat->text().isNull()){
         ui->editwarning->setText("NO SURAT HARUS DIISI !");
         ui->editnosurat->setFocus();
-    }else if(ui->editperihal->text() == NULL){
+    }else if(ui->editperihal->text().isNull()){
         ui->editwarning->setText("PERIHAL HARUS DIISI !");
         ui->editperihal->setFocus();
-    }else if(ui->editacckepada->text() == NULL){
+    }else if(ui->editacckepada->text().isNull()){
         ui->editwarning->setText("ACC KEPADA HARUS DIISI !");
         ui->editacckepada->setFocus();
-    }else if(ui->edittglacc->text() == NULL){
+    }else if(ui->edittglacc->text().isNull()){
         ui->editwarning->setText("TANGGAL ACC HARUS DIISI !");
         ui->edittglacc->setFocus();
-    }else if(ui->editketerangan->text() == NULL){
+    }else if(ui->editketerangan->text().isNull()){
         ui->editwarning->setText("KETERANGAN HARUS DIISI !");
         ui->editketerangan->setFocus();
-    }else if(ui->editklasifikasi->text() == NULL){
+    }else if(ui->editklasifikasi->text().isNull()){
         ui->editwarning->setText("KLASIFIKASI HARUS DIISI !");
         ui->editklasifikasi->setFocus();
     }else{

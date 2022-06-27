@@ -9,7 +9,6 @@
 
 #include <QWidget>
 #include <QApplication>
-#include <QDesktopWidget>
 
 namespace Ui {
 class login;

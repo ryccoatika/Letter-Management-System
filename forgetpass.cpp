@@ -54,19 +54,19 @@ void forgetpass::on_showmasterkey_released()
 void forgetpass::on_reset_clicked()
 {
     ui->information->setText("");
-    if(ui->userid->text() == NULL){
+    if(ui->userid->text().isNull()){
         ui->userid->setFocus();
         ui->warning->setText("USER ID HARUS DIISI !");
-    }else if(ui->password->text() == NULL){
+    }else if(ui->password->text().isNull()){
         ui->password->setFocus();
         ui->warning->setText("PASSWORD HARUS DIISI !");
-    }else if(ui->confirmpassword->text() == NULL){
+    }else if(ui->confirmpassword->text().isNull()){
         ui->confirmpassword->setFocus();
         ui->warning->setText("KONFIRMASI HARUS DIISI !");
     }else if(ui->confirmpassword->text() != ui->password->text()){
         ui->confirmpassword->setFocus();
         ui->warning->setText("KONFIRMASI HARUS SAMA DENGAN PASSWORD !");
-    }else if(ui->masterkey->text() == NULL){
+    }else if(ui->masterkey->text().isNull()){
         ui->masterkey->setFocus();
         ui->warning->setText("MASTER KEY HARUS DIISI !");
     }else{
@@ -108,13 +108,14 @@ void forgetpass::on_reset_clicked()
                             ui->confirmpassword->clear();
                             ui->masterkey->clear();
                             ui->userid->setFocus();
-                        }else
+                        }else {
                             ui->warning->setText("KATA SANDI GAGAL DIGANTI");
                             ui->userid->clear();
                             ui->password->clear();
                             ui->confirmpassword->clear();
                             ui->masterkey->clear();
                             ui->userid->setFocus();
+                        }
                     }else{
                         ui->warning->setText("USER ID TIDAK TERDAFTAR");
                         ui->userid->clear();
